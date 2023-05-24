@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <!--meta information for browsers-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--tab title-->
+    <title>Who's That POKEMON</title>
+    <!--axios api for ease of use-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!--jquery for ease of use, needed for load gamespace-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!--bootstrap for easy design-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" 
+        crossorigin="anonymous">
+    <!--importing the style sheets-->
+    <link rel="stylesheet" href="index.css">
+    <!--importing the javascript-->
+    <script defer src="index.js"></script>
+</head>
+
+<!--body of the page, contains all the content-->
+<body>
+    <!--Contains the difficulty buttons-->
+    <div class="container">
+        <button id="easy"   type="button" class="btn btn-light">Easy    </button>
+        <button id="medium" type="button" class="btn btn-light">Medium  </button>
+        <button id="hard"   type="button" class="btn btn-light">Hard    </button>
+    </div>
+
+    <!--Contains the dark and light mode theme buttons-->
+    <div class="container">
+        <button id="lightmode"  type="button" class="btn btn-light">Light   </button>
+        <button id="darkmode"   type="button" class="btn btn-light">Dark    </button>
+    </div>
+
+    <!--Contains the start and reset buttons-->
+    <div class="container">
+        <button id="start" type="button" class="btn btn-light">Start</button>
+        <button id="reset" type="button" class="btn btn-light">Reset</button>
+    </div>
+
+    <!--Contains the pair stats(total pairs, matched pairs, pairs remaining, number of clicks) and timer-->
+    <div class="container" id="headsup">
+        <div id="pairStats"></div>
+        <div id="timer"></div>
+    </div>
+
+    <!--Contains the game space where the memory-->
+    <div id="gamespace"></div>
+</body>
+
+
+</html>
